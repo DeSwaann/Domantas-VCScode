@@ -57,7 +57,7 @@ namespace ConsoleApp3
             }
             else
             {
-                Console.WriteLine("Skaičius neatitinka sąlygos");
+                Console.WriteLine("Skaičius neatitinka sąlygoss");
             }
 
 
