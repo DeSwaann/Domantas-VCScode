@@ -17,7 +17,7 @@ namespace ConsoleApp3
             {
                 Console.WriteLine("Pirmasis skaičius didžiausias");
             }
-            else if (skaicius1 < skaicius2 && skaicius2 > skaicius3)
+            else if (skaicius2 > skaicius3)
             {
                 Console.WriteLine("antrasis skaičius didžiausias");
             }
@@ -43,7 +43,7 @@ namespace ConsoleApp3
             {
                 Console.WriteLine("Antras skaičius mažesnis už nulį arba pirmą skaičių");
             }
-            if (skaicius1 > skaicius2 && skaicius2 < skaicius3 || skaicius1 >0 )
+            if (skaicius1 > skaicius2 && (skaicius2 > skaicius3 || skaicius1 >0) )
             {
                 Console.WriteLine("Pirmas skaičius didesnis už antrą skaičių ir trečią skaičių arba yra teigiamas");
             }
