@@ -3,7 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>ConsoleApp3.Program4</StartupObject>
+    <StartupObject>ConsoleApp3.Program5</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="BigHomeWork1\" />
+  </ItemGroup>
 
 </Project>
