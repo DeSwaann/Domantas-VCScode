@@ -7,7 +7,7 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            /*List<string> aRandomList = new List<string>();
+            List<string> aRandomList = new List<string>();
             aRandomList.Add("a random line");
             aRandomList.Insert(1, "a random line2");
             aRandomList.AddRange(aRandomList);
@@ -19,7 +19,7 @@ namespace ConsoleApp3
             aRandomList.Remove("a random line");
             aRandomList.RemoveAt(1);
             aRandomList.RemoveRange(0, 2);
-            aRandomList.Clear();*/
+            aRandomList.Clear();
 
             Random r = new Random();
             
