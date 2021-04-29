@@ -69,5 +69,6 @@ namespace LearningApp.GameSample.Game
                 enemy.MoveDown();
             }
         }
+       
     }
 }

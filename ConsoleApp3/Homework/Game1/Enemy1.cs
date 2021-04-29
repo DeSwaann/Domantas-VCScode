@@ -26,5 +26,9 @@ namespace ConsoleApp3.Homework.Game1
         {
             Console.WriteLine($"Enemy {Name} is at {X}/{Y}");
         }
+        public int GetId()
+        {
+            return Id;
+        }
     }
 }

@@ -15,6 +15,9 @@ namespace ConsoleApp3.Homework.Game1
             hero.MoveRight();
             hero.MoveLeft();
 
+            GameScreen gameScreen = new GameScreen(200, 40);
+            gameScreen.SetHero(new Hero1(5, 5, "Petras"));
+
             List<Enemy1> enemies = new List<Enemy1>();
             Random r = new Random();
             int uniqueID = 0;
@@ -37,8 +40,14 @@ namespace ConsoleApp3.Homework.Game1
                 enemies[i].PrintInfo();
             }
 
+            gameScreen.Render();
 
+            gameScreen.MoveHeroLeft();
+            gameScreen.MoveAllEnemiesDown();
 
+            gameScreen.GetEnemyById(0).MoveDown();
+
+            gameScreen.Render();
         }
     }
 }
