@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp3.Lesson14
+namespace ConsoleApp3.Lesson9.GUI
 {
-    class Pet : LiveObject
+    class GuiController
     {
-
     }
+
 }

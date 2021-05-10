@@ -8,11 +8,7 @@ namespace ConsoleApp3.Lesson14
     {
         protected string _name;
 
-        public override int GetLifeSpan()
-        {
-            return 420;
-        }
-
+   
         public Human (string name)
         {
             _name = name;

@@ -11,10 +11,7 @@ namespace ConsoleApp3.Lesson14
         {
             _name = name;
         }
-        public override int GetLifeSpan()
-        {
-            return 42;
-        }
+
 
 
     }

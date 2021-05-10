@@ -1,10 +1,11 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningApp.GameSample.Gui
+namespace ConsoleApp3.Lesson9.GUI
 {
     class TextLine : GuiObject
     {
@@ -16,11 +17,11 @@ namespace LearningApp.GameSample.Gui
             this.data = data;
         }
 
-        public void Render()
+        override public void Render()
         {
-            if (data.Length > Width)
+            if (data.Length >= Width)
             {
-                // TODO : Cut text if it's too long.
+                data = data.Substring(0, Width);
                 Console.SetCursorPosition(X, Y);
             }
             else
@@ -29,7 +30,5 @@ namespace LearningApp.GameSample.Gui
             }
             Console.Write(data);
         }
-
     }
-
 }

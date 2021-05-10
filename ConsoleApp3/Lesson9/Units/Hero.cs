@@ -4,29 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp3.Lesson9.Game
+namespace ConsoleApp3.Lesson9.Units
 {
     class Hero : Unit
     {
-
-
-        public Hero(int x, int y, string name) : base(x, y, name)
+        public Hero(string name, int x, int y) : base(name, x, y)
         {
-            _x = x;
-            _y = y;
-            _name = name;
         }
 
         public void MoveRight()
         {
-            _x++;
+            X++;
         }
 
         public void MoveLeft()
         {
-            _x--;
+            X--;
         }
-
-
     }
 }

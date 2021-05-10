@@ -4,34 +4,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningApp.GameSample.Gui
+namespace ConsoleApp3.Lesson9.GUI
 {
     class Frame : GuiObject
     {
-        private char renderChar;
         public Frame(int x, int y, int width, int height, char renderChar)
             : base(x, y, width, height)
         {
-            this.renderChar = renderChar;
+            RenderChar = renderChar;
         }
+        public char RenderChar { get; set; }
 
-        internal void Render()
+        override public void Render()
         {
-            for (int x = 0; x < Width; x++)
+            for (int i = 0; i < Height; i++)
             {
-                Console.SetCursorPosition(X + x, Y);
-                Console.Write(renderChar);
-                Console.SetCursorPosition(X + x, Y + Height - 1);
-                Console.Write(renderChar);
-            }
-
-            for (int y = 1; y < Height - 1; y++)
-            {
-                Console.SetCursorPosition(X, Y + y);
-                Console.Write(renderChar);
-                Console.SetCursorPosition(X + Width - 1, Y + y);
-                Console.Write(renderChar);
-
+                Console.SetCursorPosition(X, Y + i);
+                if (i == 0 || i == Height - 1)
+                {
+                    for (int j = 0; j < Width; j++)
+                    {
+                        Console.Write(RenderChar);
+                    }
+                }
+                else
+                {
+                    Console.Write(RenderChar);
+                    for (int j = 0; j < Width - 2; j++)
+                    {
+                        Console.Write(' ');
+                    }
+                    Console.Write(RenderChar);
+                }
             }
         }
     }

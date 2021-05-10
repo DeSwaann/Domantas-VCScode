@@ -4,15 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningApp.GameSample.Gui
+namespace ConsoleApp3.Lesson9.GUI
 {
-    class GuiObject
+    abstract class GuiObject
     {
-        protected int X;
-        protected int Y;
-        protected int Width;
-        protected int Height;
-
         public GuiObject(int x, int y, int width, int height)
         {
             X = x;
@@ -20,5 +15,12 @@ namespace LearningApp.GameSample.Gui
             Width = width;
             Height = height;
         }
+
+        protected int X { get; set; }
+        protected int Y { get; set; }
+        protected int Width { get; set; }
+        protected int Height { get; set; }
+
+        abstract public void Render();
     }
 }

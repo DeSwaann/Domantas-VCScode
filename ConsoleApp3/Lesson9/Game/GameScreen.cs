@@ -1,11 +1,12 @@
-﻿using System;
+﻿
+using ConsoleApp3.Lesson9.Units;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ConsoleApp3.Lesson9.Game;
 
-namespace LearningApp.GameSample.Game
+namespace ConsoleApp3.Lesson9.Game
 {
     class GameScreen
     {
@@ -69,6 +70,5 @@ namespace LearningApp.GameSample.Game
                 enemy.MoveDown();
             }
         }
-       
     }
 }

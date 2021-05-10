@@ -1,7 +1,7 @@
 ﻿using System;
 using ConsoleApp3.Lesson14;
 
-namespace ConsoleApp3
+/*namespace ConsoleApp3
 {
     class ProgramOOP
 
@@ -25,4 +25,4 @@ namespace ConsoleApp3
         }
 
     }
-}
+}*/
