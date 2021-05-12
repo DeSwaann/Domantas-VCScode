@@ -11,7 +11,7 @@ namespace ConsoleApp3.Lesson9.GUI
         private Frame activeFrame;
         private Frame notActiveFrame;
         private TextLine textLine;
-
+        internal string name;
         private const char activeChar = '#';
         private const char notActiveChar = '+';
 

@@ -13,10 +13,13 @@ namespace ConsoleApp3.Lesson9.Windows
         private Button creditsButton;
         private Button quitButton;
         private TextBlock titleTextBlock;
+        private List<Button> buttonList;
 
         public MenuWindow() : base(0, 0, 120, 30, "Game menu!", '%')
         {
             titleTextBlock = new TextBlock(10, 5, 100, new List<string> { "Super duper zaidimas", "Vardas Pavardaitis kuryba!", "Made in Vilnius Coding School!" });
+
+            buttonList = new List<Button>();
 
             startButton = new Button(20, 13, 18, 5, "Start");
             startButton.IsActive = true;
@@ -24,6 +27,12 @@ namespace ConsoleApp3.Lesson9.Windows
             creditsButton = new Button(50, 13, 18, 5, "Credits");
 
             quitButton = new Button(80, 13, 18, 5, "Quit");
+
+            buttonList.Add(startButton);
+            buttonList.Add(creditsButton);
+            buttonList.Add(quitButton);
+
+            
         }
 
         public override void Render()

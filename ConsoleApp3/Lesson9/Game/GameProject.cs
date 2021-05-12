@@ -20,14 +20,17 @@ namespace ConsoleApp3.Lesson9.Game
 
             Console.CursorVisible = false;
 
-            /*MenuWindow gameWindow = new MenuWindow();
-             gameWindow.Render();
+            MenuWindow gameWindow = new MenuWindow();
+            //gameWindow.Render();
 
              CreditWindow creditWindow = new CreditWindow();
-             creditWindow.Render();*/
+            //creditWindow.Render();
 
-            guiController.ShowMenu();
+            //guiController.ShowMenu();
+            gameWindow.ButtonInfo();
+            
             Console.ReadKey();
+
 
 
         }

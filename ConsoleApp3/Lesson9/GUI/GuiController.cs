@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using ConsoleApp3.Lesson9.Windows;
+using ConsoleApp3.Lesson9.Game;
 
 
 namespace ConsoleApp3.Lesson9.GUI
@@ -10,10 +11,13 @@ namespace ConsoleApp3.Lesson9.GUI
     {
         private MenuWindow menuWindow;
         private CreditWindow creditWindow;
+        private GameController gameController;
+
         public GuiController()
         {
             menuWindow = new MenuWindow();
             creditWindow = new CreditWindow();
+            gameController = new GameController();
         }
 
         public void ShowMenu()
@@ -21,6 +25,7 @@ namespace ConsoleApp3.Lesson9.GUI
             menuWindow.Render();
             creditWindow.Render();
         }
+
 
     }
 }
