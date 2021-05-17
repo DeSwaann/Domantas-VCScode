@@ -45,7 +45,7 @@ namespace ConsoleApp3.Homework.Game1
             gameScreen.MoveHeroLeft();
             gameScreen.MoveAllEnemiesDown();
 
-            gameScreen.GetEnemyById(0).MoveDown();
+            //gameScreen.GetEnemyById(0).MoveDown();
 
             gameScreen.Render();
         }

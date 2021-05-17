@@ -20,6 +20,7 @@ namespace ConsoleApp3.Lesson9.GUI
             activeFrame = new Frame(x, y, width, height, activeChar);
             notActiveFrame = new Frame(x, y, width, height, notActiveChar);
             textLine = new TextLine(x + 1, y + height / 2, width - 2, label);
+            name = label;
         }
 
         public bool IsActive { get; set; }

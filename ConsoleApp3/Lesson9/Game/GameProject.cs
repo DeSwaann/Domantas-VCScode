@@ -26,8 +26,7 @@ namespace ConsoleApp3.Lesson9.Game
              CreditWindow creditWindow = new CreditWindow();
             //creditWindow.Render();
 
-            //guiController.ShowMenu();
-            gameWindow.ButtonInfo();
+            guiController.ShowMenu();
             
             Console.ReadKey();
 

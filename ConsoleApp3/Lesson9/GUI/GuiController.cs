@@ -23,9 +23,8 @@ namespace ConsoleApp3.Lesson9.GUI
         public void ShowMenu()
         {
             menuWindow.Render();
-            creditWindow.Render();
+            //creditWindow.Render();
         }
 
-
-    }
+        }
 }
